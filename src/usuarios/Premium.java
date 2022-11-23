@@ -4,6 +4,7 @@ public class Premium extends Usuarios {
 
     String rango = "Premium";
     Categorias tipo = Categorias.Barato;
+   
     
     // SOBRECARGA DE CONSTRUCTORES
     public Premium(String nombre, String email, int edad) {
