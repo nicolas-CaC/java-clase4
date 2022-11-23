@@ -20,22 +20,11 @@ public class FreeUsers extends Usuarios {
     private String setCategoria(int hs) {
         String category;
         category = null;
-
-        if (hs > 0 && hs <= 3) {
-            category = "Noob";
-        }
-        if (hs > 3 && hs <= 6) {
-            category = "Normal";
-        }
-        if (hs > 6 && hs <= 9) {
-            category = "Experto";
-        }
-        if (hs > 9) {
-            category = "full";
-        }
-        if (hs < 0) {
-            throw new Error("Los valores no pueden ser negativos");
-        }
+        if (hs > 0 && hs <= 3) category = "Noob";
+        if (hs > 3 && hs <= 6)  category = "Normal";
+        if (hs > 6 && hs <= 9)  category = "Experto";
+        if (hs > 9)  category = "full";  
+        if (hs < 0)  throw new Error("Los valores no pueden ser negativos");  
         return category;
     }
 
